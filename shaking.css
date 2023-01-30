@@ -1,6 +1,9 @@
 body,html{
     background-color: black;
     height: 100vh;
+    background-image: url(/media/bg.jpg);
+    background-size: cover;
+    background-position: center;
 
 
 }
@@ -11,6 +14,12 @@ body,html{
     top: 30%;
 
 }
+
+.cube {
+    mix-blend-mode: screen;
+}
+
+
 .cube:hover{
     animation: tilt-shaking 0.5s infinite;
 }
