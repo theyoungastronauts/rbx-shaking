@@ -1,0 +1,29 @@
+body,html{
+    background-color: black;
+    height: 100vh;
+
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+
+}
+.cube:hover{
+    animation: tilt-shaking 0.5s infinite;
+}
+@media only screen and (max-device-width: 768px){
+    .cube{
+    animation: tilt-shaking 0.5s infinite;
+    }
+}
+
+@keyframes tilt-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(15px) }
+    50% { transform: translateX(-15px) }
+    75% { transform: translateX(15px) }
+    100% { transform: translateX(0) }
+}
